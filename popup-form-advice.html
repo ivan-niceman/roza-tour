@@ -1,0 +1,63 @@
+<div class="popup popup-form-advice">
+  <div class="popup-content-form">
+    <div class="popup-form-block-advice">
+      <button
+        aria-label="закрыть"
+        type="button"
+        class="popup-close-advice"
+      ></button>
+      <h2 class="header__form-title">
+        Получить консультацию
+      </h2>
+      <form
+      method="POST"
+        id="popup-form-advice"
+        class="form-content"
+      >
+        <input
+          type="text"
+          name="name"
+          class="form-input"
+          placeholder="Имя"
+          required
+        />
+        <input
+          type="text"
+          name="tel"
+          class="form-input"
+          placeholder="Телефон"
+          pattern="[0-9\+]*"
+        minlength="10"
+        required
+        />
+        <input
+          type="email"
+          name="email"
+          class="form-input"
+          placeholder="Электронная почта (не обязательно)"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        />
+        <textarea
+          name="message"
+          id="message"
+          class="form-textarea"
+          placeholder="Укажите, пожалуйста, желаемые даты поездки, страну и количество человек"
+          minlength="7"
+          required
+        ></textarea>
+        <div class="form-submit">
+          <button type="submit" aria-label="отправить" class="form-btn">
+            Отправить
+          </button>
+          <p class="form-privacy-paragraph">
+            Отправляя сообщение вы соглашаетесь на&nbsp;
+            <a href="/privacy" class="form-privacy-link" target="_blank">
+              обработку персональных данных
+            </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="./scripts/form-popup-advice.js"></script>
